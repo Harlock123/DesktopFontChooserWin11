@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopFontChooserWin11", "DesktopFontChooserWin11\DesktopFontChooserWin11.csproj", "{F102D008-9E78-4ED8-860B-88229EC012CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F102D008-9E78-4ED8-860B-88229EC012CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F102D008-9E78-4ED8-860B-88229EC012CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F102D008-9E78-4ED8-860B-88229EC012CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F102D008-9E78-4ED8-860B-88229EC012CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {953BA8D1-E61F-4D0C-AEDA-6E75FA6AE045}
+	EndGlobalSection
+EndGlobal
