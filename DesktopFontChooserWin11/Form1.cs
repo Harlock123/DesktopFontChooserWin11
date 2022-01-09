@@ -1,4 +1,5 @@
 using Microsoft.Win32;
+using System.Security.Principal;
 
 namespace DesktopFontChooserWin11
 {
@@ -7,9 +8,25 @@ namespace DesktopFontChooserWin11
         public Form1()
         {
             InitializeComponent();
+
+            if (!IsAdministrator())
+            {
+                MessageBox.Show("You will need to be an Administrator to set the desktop FONT");
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+
+    public static bool IsAdministrator()
+    {
+        using (WindowsIdentity identity = WindowsIdentity.GetCurrent())
+        {
+            WindowsPrincipal principal = new WindowsPrincipal(identity);
+            return principal.IsInRole(WindowsBuiltInRole.Administrator);
+        }
+    }
+
+    private void button1_Click(object sender, EventArgs e)
         {
             if (FD1.ShowDialog() == DialogResult.OK)
             {
